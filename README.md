@@ -1,2 +1,2 @@
 # teste-home.login
- Miniprojeto demostrando patricas em HTML, CSS e JAVASCRIPT.
+ Miniprojeto demostrando práticas em HTML, CSS e JAVASCRIPT.
