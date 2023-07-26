@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login teste</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/login.css">
+</head>
+<body>
+    <span class="background"></span>
+    <span class="centering">
+        <form class="my-form">
+            <span class="login-welcome-row">
+                <img class="login-welcome" 
+                src="imagens/login/astronauta.jpg" 
+                alt="astronauta">
+
+                <h1>Login!</h1>
+            
+            </span>
+            
+            <div class="text-field">
+                <label for="email">Email:</label>
+                
+                <input 
+                type="email" 
+                name="email" 
+                id="email"
+                placeholder="Seu Email"
+                required>
+
+                <img 
+                src="imagens/login/email.svg" 
+                alt="email icon">
+
+            </div>
+
+            <div class="text-field">
+                <label for="password">Senha:</label>
+
+                <input 
+                type="password" 
+                name="senha" 
+                id="senha"
+                placeholder="Sua senha"
+                title="Mínimo de 6 caracteres, pelo menos 1 Letra e 1 Número"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                required
+                >
+
+                <img 
+                src="imagens/login/password.svg" 
+                alt="password icon">
+                
+            </div>
+
+            <input type="submit" 
+            class="my-form_button" 
+            value="Login">
+
+            <div class="my-form_actions">
+                
+                <div class="my-form_row">
+                    <span>Você esqueceu sua senha?</span>
+                    <a href="#" title="Redefinir senha">Redefinir senha</a>
+                </div>
+
+                <div class="my-form_signup">
+                    <a href="#" title="Criar conta">Criar Conta </a>
+                </div>
+
+                <a id="prev-button" href="index.html"><img src="imagens/arrow2.png" alt="prev-button"></a>
+            </div>
+        </form>
+    </span>
+    <script src="scripts/login.js"></script>
+</body>
+</html>

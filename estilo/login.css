@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root{
+    --cor1: #e8f719;
+    --cor2: #173BE8;
+    --cor3: #237ee6;
+    --cor4: #17A2E8;
+    --cor5: #2BECFF;
+    --cor-header:#506266;
+
+    --fonte-rodape: 'Kanit', sans-serif;
+    --fonte-destaque: 'Mulish';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-destaque);
+    
+}
+
+h1{
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.699);
+}
+
+.background{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(328deg, #020024 0%, #2135ff 0%, #21ffdd 100%);
+   
+    
+}
+
+.centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.my-form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 16px;
+    background-color: var(--cor-header);
+    border: 1px solid  #d2e007;
+    border-radius: 16px;
+    box-shadow: 0 2px 50px #b7c409;
+    min-width: 280px;
+    max-width: 460px;
+    width: 100%;
+    padding: 2em;
+}
+
+.login-welcome{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.login-welcome-row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.my-form_button{
+    font-size: 1.1em;
+    background-color: #237ee6;
+    color: white;
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    line-height: 50px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600px;
+    min-height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.15);
+    transition: all 0.3s ease;
+    -webkit-transition:all 0.3s ease ;
+}
+
+.text-field input{
+    color: #d1d0d0;
+    font-size: 1em;
+    font-weight: 500;
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid #d1d0d0 ;
+    height: 50px;
+    letter-spacing: .03rem;
+    background-color: transparent;
+    outline: none;
+    transition: .25s;
+    border-radius: 8px;
+    text-indent: 20px;
+    margin-top: 8px;
+}
+
+.my-form_button:hover{
+    background-color: #1597d8;
+}
+
+.text-field{
+    position: relative;
+}
+
+.text-field input::-webkit-input-placeholder {
+    color: #d1d1d1;
+}
+
+.text-field img{
+    position: absolute;
+    right: -2px;
+    bottom: -4px;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%,-50%);
+    transform-origin: center;
+}
+
+.text-field input:focus {
+    border: 1px solid #d2e007;
+}
+
+.text-field label {
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.699);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .03rem;
+    z-index: 10;
+
+}
+
+.input-icon{
+    position: absolute;
+    bottom: 0;
+    top: 55%;
+    right: 8px;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+}
+
+.my-form_actions{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 1em;
+    margin-top: 8px;
+}
+
+.my-form_actions a {
+    color: white;
+    font-weight: 500;
+   
+}
+
+.my-form_actions a:hover{
+    color: var(--cor4);
+    transition: 0.3s ease;
+}
+
+.my-form_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-form_signup{
+    display: flex;
+    justify-content: center;
+}
+
+.my-form_signup a {
+    color: #c8d608;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.my-form_signup a:hover{
+    color: #e6f143;
+    transition: 0.3s ease;
+}
+
+#prev-button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transform: rotate(180deg);
+    margin: -12px -15px;
+}
+
+#prev-button img{
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 600px){
+    .my-form{
+        max-width: 345px; 
+    }
+}
