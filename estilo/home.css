@@ -25,12 +25,16 @@
 }
 
 body{
-    display: block;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    max-width: 100%;
     background: linear-gradient(328deg, #020024 0%, #2135ff 0%, #21ffdd 100%);
     z-index: 1;
+    transition: 0.3s ease-out;
+    overflow-x: hidden;
+    overscroll-behavior: none;
     background-size: cover;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .menu-bar{
@@ -72,7 +76,7 @@ body{
 
 @keyframes fade{
     0% {opacity: 0}
-    100% {opacity : 0.9}
+    100% {opacity : 1}
 }
 
 .navegation{
@@ -152,14 +156,7 @@ body{
     
 }
 
-.meio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 60vh;
-    justify-content: space-around;
-}
+
 
 .rodape{
     display: flex;
@@ -206,6 +203,7 @@ body{
 }
 
 @media (max-width:600px){
+
     .navegation{
         display: none;
     }
@@ -267,27 +265,4 @@ body{
     transition: 1s all ease;
     box-shadow: 0px 1px 10px #17A2E8;
     }
-
-
 }
-
-@media (max-width:1100px){
-    .meio{
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    .card{
-        min-width: 300px;
-    }
-
-
-    .conteudo{
-        width: 100%;
-        max-width: 420px;
-        font-size: 12px;
-        margin-top: 2em;
-    }
-}
-
