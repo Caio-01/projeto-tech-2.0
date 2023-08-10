@@ -156,7 +156,79 @@ body{
     
 }
 
+section:not(#sectionPin){
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 50px 10vw;
+    margin: auto;
+    place-items: center;
+}
 
+.sectionTop h1{
+    font-size: 4em;
+    line-height: 1;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: 10vw;
+    left: 10vw;
+    z-index: 4;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.sectionTop p {
+    position: relative;
+    text-align: justify;
+    color: white;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.664);
+    font-size: 1.2em;
+    left: 20vw;
+    width: 250px;
+    line-height: 1.5;
+}
+
+.slides > img {
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sectionTop span{
+    display: block;
+}
+
+#sectionPin h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    max-width: 400px;
+    color: #d5e400;
+    text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.493);
+}
+
+#sectionPin{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    left: 0;
+    background-color: var(--cor-header);
+}
+
+.pin-wrap{
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px 10vw;
+}
+
+.pin-wrap > * {
+    min-width: 60vw;
+    padding: 0 5vw;
+}
 
 .rodape{
     display: flex;
@@ -193,6 +265,14 @@ body{
 
 
 /*Media Screen*/
+
+@media (max-width: 768px) {
+
+    .sectionTop h1{
+        font-size: 10vw;
+    }
+    
+}
 
 @media (min-width:600px){
     .menu-icon{
