@@ -27,6 +27,5 @@ const toggleMenu = () => {
 };
 
 
-
-
+//Funcao para rolagem de slides
 
