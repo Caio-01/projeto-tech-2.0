@@ -202,7 +202,8 @@ section:not(.sectionImg){
     height: 70vh;
     width: 100vw;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.61);
-    background-color: var(--cor-header);
+    background-color: rgba(80, 98, 102, 0.952);
+    backdrop-filter: blur(20px);
 }
 
 .textSlide > h2{
