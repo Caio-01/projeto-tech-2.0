@@ -221,7 +221,6 @@ section:not(.sectionImg){
     padding: 8px 0px;
     margin: 4px;
     gap:10px;
-    max-width: 400px;
     max-width: 500px;
     transition: all 0.2s;
     overflow-x: scroll;
@@ -230,7 +229,6 @@ section:not(.sectionImg){
 
 .card{
     padding: 4px;
-    min-width: 400px;
     min-width: 500px;
     color: white;
     display: flex;
@@ -265,12 +263,12 @@ section:not(.sectionImg){
 }
 
 .corpoSlide::-webkit-scrollbar-thumb {
-    background: #17A2E8;
+    background: #0c95da;
     border-radius: 5px;
 }
 
 .corpoSlide::-webkit-scrollbar-thumb:hover {
-    background: #17A2E8;
+    background: #0c95da;
 } 
 
 .rodape{
@@ -398,5 +396,35 @@ section:not(.sectionImg){
     box-shadow: 0px 1px 10px #17A2E8;
     }
 
+}
+
+
+@media (max-width:800px){
+    .sectionImg{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+    .textSlide h2{
+    text-align: center;
+    padding-top: 1em;
+    margin: auto;
+    font-size: 2em;
+    margin-bottom: -3em ;
+    }
+
+    .corpoSlide {
+        margin: auto;
+        max-width: 300px;
+    }
+
+    .card{
+        min-width: 300px;
+    }
+    .card img{
+        max-width: 300px;
+    }
 
 }
