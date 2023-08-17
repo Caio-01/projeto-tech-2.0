@@ -89,7 +89,7 @@ body{
    
 }
 
-.navegation > li{
+.navegation > li, a{
     display: flex;
     position: relative;
     padding: 0px;
@@ -97,9 +97,10 @@ body{
     cursor: pointer;
     width: max-content;
     transition: all 0.2s;
+    text-decoration: none;
 }
 
-.navegation > li:hover{
+.navegation > li, a:hover{
     color: #e8f719;
 }
 
@@ -199,22 +200,40 @@ section:not(.sectionImg){
     justify-content: center;
     align-items: center;
     gap: 8em;
-    height: 70vh;
+    height: 720px;
     width: 100vw;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.61);
-    background-color: rgba(80, 98, 102, 0.952);
-    backdrop-filter: blur(20px);
+    background-image: linear-gradient( -45deg, var(--cor-header) 40%, transparent);
+   
 }
 
+.textSlide{
+    
+    padding: 1em;
+    max-width: 450px;
+    min-height: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 7px #e8f719;
+}
 .textSlide > h2{
     text-align: justify;
-    font-weight: 800;
-    font-size: 2rem;
-    max-width: 400px;
-    color: #d5e400;
-    text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.493);
+    font-weight: 600;
+    font-size: 3.2rem;
+    color: #e8f719;
+    text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.349);
 }
 
+.textSlide > h3{
+    color: white;
+    font-size: 2em;
+    text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.349);
+}
+
+.textSlide span {
+    color: #3fbdfc;
+    
+    text-shadow: 0px 1px 8px #3fbdfc46;
+}
 .corpoSlide{
     display: flex;
     flex-direction: row;
@@ -400,7 +419,7 @@ section:not(.sectionImg){
 }
 
 
-@media (max-width:800px){
+@media (max-width:1110px){
     .sectionImg{
     display: grid;
     justify-content: center;
@@ -408,12 +427,20 @@ section:not(.sectionImg){
 
     }
 
-    .textSlide h2{
-    text-align: center;
+    .textSlide{
+    text-align: justify;
+    max-width: 250px;
+    max-height: 250px;
     padding-top: 1em;
     margin: auto;
-    font-size: 2em;
-    margin-bottom: -3em ;
+    margin-bottom: -10em ;
+    }
+
+    .textSlide h2 {
+        font-size: 2em;
+    }
+    .textSlide h3{
+        font-size: 1.2em;
     }
 
     .corpoSlide {
