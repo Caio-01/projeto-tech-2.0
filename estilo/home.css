@@ -89,7 +89,7 @@ body{
    
 }
 
-.navegation > li, a{
+.navegation > li, .navegation a{
     display: flex;
     position: relative;
     padding: 0px;
