@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 :root{
     --cor1: #2135FF;
     --cor2: #173BE8;
@@ -14,6 +16,7 @@
 
     --fonte-rodape: 'Kanit', sans-serif;
     --fonte-destaque: 'Mulish';
+    --font-tecno: 'Poppins', sans-serif;
 }
 
 *{
@@ -157,7 +160,7 @@ body{
     
 }
 
-section:not(.sectionImg){
+.sectionTop{
     min-height: 100vh;
     width: 100%;
     position: relative;
@@ -291,6 +294,59 @@ section:not(.sectionImg){
     background: #0c95da;
 } 
 
+.sectionBot{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 1% 0;
+    height: 600px;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../imagens/home/img-tecno.jpg); /*imagem no site usando url*/
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.61);
+}
+
+.botConteudo{
+    display: grid;
+    align-items: center;
+    padding: 1em;
+    background-image: radial-gradient( circle, #353d3f56, transparent);
+    margin-right: 2em;
+    min-height: 200px;
+    border-radius: 5px;
+}
+
+.sectionBot h2{
+    color: white;
+    font-family: var(--font-tecno);
+    text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.61);
+    font-size: 3.5em;
+}
+
+.sectionBot a {
+    position: relative;
+    width: 23%;
+    font-family: var(--font-tecno);
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #0aa2ee;
+}
+
+.sectionBot a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #4be7d8;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+
+.sectionBot a:hover::after{
+    width: 97%;
+}
 .rodape{
     display: flex;
     justify-content: center;
