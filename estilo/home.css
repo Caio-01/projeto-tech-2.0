@@ -211,30 +211,29 @@ body{
 }
 
 .textSlide{
-    
     padding: 1em;
     max-width: 450px;
     min-height: 200px;
     border-radius: 5px;
-    box-shadow: 0px 1px 7px #e8f719;
+    border: 10px solid #e8f71990;
+    box-shadow: -28px 18px 2px rgba(0, 0, 0, 0.40) ;
 }
 .textSlide > h2{
     text-align: justify;
     font-weight: 600;
     font-size: 3.2rem;
     color: #e8f719;
-    text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.349);
+    text-shadow: -4px 2px 4px rgba(0, 0, 0, 0.349);
 }
 
 .textSlide > h3{
     color: white;
     font-size: 2em;
-    text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.349);
+    text-shadow: -4px 2px 4px rgba(0, 0, 0, 0.349);
 }
 
 .textSlide span {
     color: #3fbdfc;
-    
     text-shadow: 0px 1px 8px #3fbdfc46;
 }
 .corpoSlide{
@@ -490,13 +489,14 @@ body{
     padding-top: 1em;
     margin: auto;
     margin-bottom: -10em ;
+    box-shadow: -20px 12px 2px rgba(0, 0, 0, 0.40) ;
     }
 
     .textSlide h2 {
         font-size: 2em;
     }
     .textSlide h3{
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .corpoSlide {
