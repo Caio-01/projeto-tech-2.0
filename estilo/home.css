@@ -516,15 +516,16 @@ body{
     }
 
     .botConteudo{
-        max-width: 400px;
+        max-width: 350px;
         min-height: 150px;
+        margin-right: 0;
     }
 
     .sectionBot h2{
-        font-size: 2em;
+        font-size: 1.8em;
     }
     .sectionBot a {
         font-size: 1em;
-        width: 27%;
+        width: 30%;
     }
 }
