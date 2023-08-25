@@ -247,6 +247,7 @@ body{
     transition: all 0.2s;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    
 }
 
 .card{
@@ -257,12 +258,15 @@ body{
     font-size: 48px;
     transition: all 0.2s;
     scroll-snap-align: start;
+    
+    
 }
 
 .card figure {
     margin: 0px;
     cursor: move;
     cursor: grab;
+    
 }
 
 .card figure:active {
@@ -273,6 +277,7 @@ body{
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: 5px;
 }
 
 .corpoSlide::-webkit-scrollbar {
