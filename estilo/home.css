@@ -31,15 +31,11 @@ body{
     width: 100%;
     max-width: 100%;
     background: linear-gradient(328deg, #020024 0%, #2135ff 0%, #21ffdd 100%);
-    z-index: 1;
     transition: 0.3s ease-out;
     overflow-x: hidden;
-    overscroll-behavior: none;
     background-size: cover;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  
 }
-
 .menu-bar{
     color: white;
     background-color: var(--cor-header);
@@ -166,35 +162,40 @@ body{
     position: relative;
     display: grid;
     margin: auto;
-    place-items: center;
 }
 
 .sectionTop h1{
-    font-size: 4em;
+    font-size: 4.5em;
     line-height: 1;
     font-weight: 800;
-    margin-bottom: 2rem;
-    position: absolute;
-    top: 10vw;
-    left: 10vw;
-    z-index: 1;
+    padding: 10px;
     overflow-wrap: break-word;
     hyphens: auto;
+    max-height: 100px;
+    margin: 2em 0px -1em 2em 
 }
 
 .sectionTop span{
     display: block;
 }
 
-.sectionTop p {
-    position: absolute;
-    right: 5vw;
+.topConteudo{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 4.5em;
+    max-height: 100px;
+}
+
+.topConteudo p { 
     text-align: justify;
     color: white;
     text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.664);
-    font-size: 1.2em;
-    width: 250px;
+    font-size: 1.4em;
+    width: 260px;
     line-height: 1.5;
+    max-height: 100px;
+
 }
 
 
@@ -290,12 +291,12 @@ body{
 }
 
 .corpoSlide::-webkit-scrollbar-thumb {
-    background: #0c95da;
+    background: #0079b6;
     border-radius: 5px;
 }
 
 .corpoSlide::-webkit-scrollbar-thumb:hover {
-    background: #0c95da;
+    background: #0079b6;
 } 
 
 .sectionBot{
@@ -387,22 +388,6 @@ body{
 
 /*Media Screen*/
 
-@media (max-width: 768px) {
-
-    .sectionTop h1{
-        font-size: 10.5vw;
-    }
-
-
-}
-
-@media (max-width: 400px){
-    
-    .sectionTop p {
-        font-size: 4vw;
-        width: 200px;
-    }
-}
 
 @media (min-width:600px){
     .menu-icon{
@@ -414,6 +399,14 @@ body{
 
 @media (max-width:600px){
 
+    .topConteudo{
+        margin-right: 2.5em;
+    }
+    .topConteudo p {
+        font-size: 0.9em;
+        width: 220px;
+
+    }
     .navegation{
         display: none;
     }
@@ -478,8 +471,19 @@ body{
 
 }
 
+@media (max-width:990px){
+    .sectionTop h1{
+        font-size: 10vw;
+        margin-left: .8em;
+    }
+}
 
 @media (max-width:1110px){
+
+    .sectionTop h1{
+        margin-bottom: 2.5em;
+    }
+
     .sectionImg{
     display: grid;
     justify-content: center;
