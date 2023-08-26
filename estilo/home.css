@@ -183,7 +183,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-right: 4.5em;
+    margin-right: 6em;
     max-height: 100px;
 }
 
@@ -388,13 +388,11 @@ body{
 
 /*Media Screen*/
 
-
 @media (min-width:600px){
     .menu-icon{
         display: none;
     }
 
-  
 }
 
 @media (max-width:600px){
@@ -407,6 +405,7 @@ body{
         width: 220px;
 
     }
+
     .navegation{
         display: none;
     }
@@ -471,17 +470,21 @@ body{
 
 }
 
-@media (max-width:990px){
+@media (max-width: 850px){
+
     .sectionTop h1{
-        font-size: 10vw;
-        margin-left: .8em;
+        font-size: 10.5vw;
+        
     }
+
 }
 
-@media (max-width:1110px){
+@media (max-width:1300px) {
 
     .sectionTop h1{
-        margin-bottom: 2.5em;
+        margin-top: 1.3em;
+        margin-bottom: 3em;
+        margin-left: .8em;
     }
 
     .sectionImg{
