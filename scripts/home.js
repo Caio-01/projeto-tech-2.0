@@ -1,4 +1,4 @@
-//Funcao para usar colocar o menu responsivo - modo mobile
+//Funcao para colocar o menu responsivo - modo mobile
 const toggleMenu = () => {
     const burgerMenu = document.querySelector(".menu-icon");
     const src = burgerMenu.getAttribute('src');
@@ -26,5 +26,19 @@ const toggleMenu = () => {
 
 };
 
+//Funcao para scroll do header
 
+const navBar = document.querySelector('.menu-bar');
+let prevScrollPos = window.scrollY;
 
+window.addEventListener("scroll", function () {
+    let currScrollPos = window.scrollY;
+
+    if(currScrollPos > prevScrollPos) {
+        navBar.style.transform = `translateY(-100%)`;
+    } else{
+        navBar.style.transform = `translateY(0%)`;
+    }
+
+    prevScrollPos = currScrollPos;
+});

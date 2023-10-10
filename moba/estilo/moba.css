@@ -52,6 +52,7 @@ body{
     height: 60px;
     opacity: 0.9;
     z-index: 2;
+    transition: transform 0.5s ease;
     
 }
 

@@ -1,3 +1,21 @@
+//Funcao para scroll do header
+
+const navBar = document.querySelector('.menu-bar');
+let prevScrollPos = window.scrollY;
+
+window.addEventListener("scroll", function () {
+    let currScrollPos = window.scrollY;
+
+    if(currScrollPos > prevScrollPos) {
+        navBar.style.transform = `translateY(-100%)`;
+    } else{
+        navBar.style.transform = `translateY(0%)`;
+    }
+
+    prevScrollPos = currScrollPos;
+});
+
+
 //Otimização dos Slides
 const slides = document.querySelector('.slides');
 firstImg = slides.querySelectorAll("img")[0];
